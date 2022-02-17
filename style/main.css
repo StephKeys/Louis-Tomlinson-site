@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+:root {
+  --roxo: #48336e;
+  --preto: #141414;
+  --branco: #fff;
+  --cinza: #aaa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ELEMENTOS BASE */
+body {
+  background: var(--preto);
+  color: var(--branco);
+  font-family: futura-pt, sans-serif;
+}
+
+header .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+}
+
+header .logo {
+  margin-left: 5px;
+  color: var(--cinza);
+  font-size: 40px;
+}
+
+header nav a {
+  color: var(--cinza);
+  margin-right: 10px;
+  font-size: larger;
+  cursor: pointer;
+}
+
+header nav a:hover {
+  color: var(--branco);
+}
+
+.sombra {
+  text-shadow: #000 0.1em 0.1em 0.2em;
+}
+
+/* POPUP */
+button.fechar {
+  background-color: var(--branco);
+  color: #000;
+  border: none;
+  position: absolute;
+  font-size: 35px;
+  top: 1px;
+  right: 10px;
+  cursor: pointer;
+}
+
+button.fechar:hover {
+  color: red;
+}
+
+.container-popup {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--branco);
+  color: #000;
+  margin: auto;
+  padding: 13px;
+  transition: 0.5s;
+  font-size: 10pt;
+  font-family: Poppins;
+  text-align: justify;
+  border-radius: 10px;
+  width: 450px;
+  height: 200px;
+}
+
+h3 {
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+/* FOTO PRINCIPAL */
+.foto-principal {
+  font-size: 16px;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) 100%), url(../img/lwt-bg.jpg);
+  height: 400px;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.foto-principal .descricao {
+  margin-top: 10px;
+  margin-bottom: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.foto-principal .titulo {
+  margin-top: 15%;
+  font-size: 40px;
+}
+
+.botao {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: var(--branco);
+  padding: 15px 30px;
+  margin-right: 15px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: 0.3s ease all;
+  font-weight: bold;
+}
+
+.botao:hover {
+  background-color: var(--branco);
+  color: #000;
+}
+
+.botao i {
+  margin-right: 8px;
+}
+
+.container {
+  margin-left: 20px;
+}
+
+.foto-principal .container {
+  width: 70%;
+}
+
+/* CARROSSEL DE FOTOS */
+span{font-size: 38px;}
+
+.box-foto {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.carrossel-fotos {
+  margin-top: 8px;
+}
+
+/* FOOTER */
+.baseboard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 15px;
+  position: static;
+  left: 0;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.baseboard a {
+  color: var(--branco);
+}
+
+.baseboard i {
+  font-size: small;
+  color: red;
+}

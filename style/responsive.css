@@ -1,0 +1,81 @@
+@media screen and (max-width: 700px) {
+  header .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .botao {
+    margin-top: 5px;
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .baseboard {
+    position: static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .carrossel-fotos {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .descricao {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #popup {
+    width: 90%;
+    height: 236px;
+    overflow-y: scroll;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .baseboard {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .baseboard {
+    position: static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .carrossel-fotos {
+    margin-top: 20px;
+  }
+
+  .foto-principal {
+    height: 520px;
+  }
+}
+
+@media screen and (min-width: 2048px) {
+  .carrossel-fotos {
+    margin-top: 350px;
+  }
+
+  .foto-principal {
+    height: 1000px;
+  }
+
+  span {
+    font-size: 100px;
+  }
+}
+
+@media screen and (min-width: 3000px) {
+  .foto-principal {
+    height: 700px;
+  }
+}
